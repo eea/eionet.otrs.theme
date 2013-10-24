@@ -1,0 +1,53 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Default"
+ * @section     Default Settings
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsection  Fonts
+ */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+    color: #484848;
+    margin: 0;
+    padding: 0 10px;
+    min-width: 900px;
+}
+
+/**
+ * @subsection  Links
+ */
+
+a {
+    color: #169;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #759FCF;
+}
+
+/**
+ * @subsection  MainBox
+ */
+.MainBox {
+    position: relative;
+    padding: 30px 16px 8px 8px;
+}
+
+.MessageBox {
+    margin: 20px 18px 0 10px;
+}
+
+} /* end @media */
+

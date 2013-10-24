@@ -1,0 +1,164 @@
+/**
+ * This file containts the CSS Styles for the header
+ * with it's toolbar, the userbar and the whole main navigation
+ *
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Default"
+ * @section     Header
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsection  Header
+ */
+#Header {
+    height: 72px;
+    padding: 10px 0 12px;
+    background: url(../img/header.png) no-repeat;
+    color: #FFF;
+    position: relative;
+    z-index: 10;
+    border-top: 4px solid #6f7072;
+    background-color: #A5CED1;
+}
+
+/**
+ * @subsection  Logo
+ */
+#Logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 310px;
+    height: 94px;
+    background: transparent url(../img/top_graphic.gif) no-repeat;
+}
+
+/**
+ * @subsection      Navigation Level-0
+ */
+#Navigation {
+    top: 98px;
+    left: 10px;
+    position: absolute;
+    z-index: 20;
+    background: #00446A;
+    right: 10px;
+    height: 23px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/**
+ * @subsection      Main hover effect
+ */
+#Navigation > li,
+#Navigation > li > a {
+    background: #00446A;
+}
+
+#Navigation > li > a {
+    height: 15px;
+    padding: 4px 10px 4px 10px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 15px;
+    color: #DDD;
+    background-position: top right;
+    text-transform: none;
+    display: block;
+}
+
+#Navigation a span.SearchIcon {
+    top: 3px;
+    left: 11px;
+    width: 17px;
+    height: 16px;
+    text-indent: -9999px;
+    background: url(../img/search_bg.png) no-repeat left top;
+    display: block;
+    position: absolute;
+}
+
+#Navigation > li:hover {
+    background: #759FCF;
+    cursor: pointer;
+}
+
+#Navigation > li:hover > a {
+    color: #FFF;
+    background: #759FCF;
+}
+
+#Navigation > .Selected {
+    background-position: left -76px;
+    background: #759FCF;
+    z-index: 90;
+}
+
+#Navigation > .Selected > a {
+    color: #FFF;
+    background-position: right -76px;
+    background: #759FCF;
+}
+
+/**
+ * @subsection      Navigation Second level
+ */
+
+#Navigation > .Active .Shadow > ul {
+    position: relative;
+    top: -8px;
+    width: 240px;
+    margin-left: 5px;
+    margin-top: -10px;
+    background-color: #eee;
+}
+
+#Navigation > .Active .Shadow > ul > li > a {
+    color: #000;
+}
+
+#Navigation > .Active .Shadow > ul > li {
+    color: #000;
+    border-bottom: 1px dotted #000;
+}
+
+#Navigation > .Active .Shadow > ul > li:hover {
+    background: white;
+}
+
+/**
+ * @subsection  UserInfo
+ */
+#UserInfo {
+    top: 3px;
+    right: 17px;
+    padding: 10px 40px 0 10px;
+    color: white;
+    font-size: 11px;
+    position: absolute;
+    cursor: default;
+    background-color: rgba(0,0,0,0.7);
+    height: 20px;
+    border-radius: 10px;
+}
+
+#UserInfo a.LogoutButton {
+    top: 4px;
+    right: 0;
+    width: 20px;
+    height: 18px;
+    text-indent: -9999px;
+    background: url(../img/logout_sprite.png) no-repeat left top;
+    position: absolute;
+    margin: 2px 10px 0 10px;
+}
+
+} /* end @media */

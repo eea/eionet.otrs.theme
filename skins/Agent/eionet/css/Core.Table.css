@@ -1,0 +1,30 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Default"
+ * @section     Tables
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @subsection  General stuff
+ */
+
+.DataTable tbody tr:hover td,
+.TableSmall tbody tr:hover td {
+    background: #759FCF;
+    color: white;
+}
+
+.DataTable tbody tr:active td.Clickable,
+.TableSmall tbody tr:active td.Clickable {
+    background: #759FCF;
+}
+
+
+} /* end @media */

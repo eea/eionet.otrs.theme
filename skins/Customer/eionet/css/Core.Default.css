@@ -1,0 +1,98 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Customer Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+@media screen,projection,tv,handheld {
+
+/**
+ * @package     OTRS Framework
+ * @section     Default
+ */
+body {
+    font: 12px/14px Arial, sans-serif;
+    -webkit-text-stroke:1px transparent;
+    padding: 0 10px;
+}
+
+h1.CompanyName {
+    margin: 30px 0 0 20px;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#MainBox {
+    min-height: 600px;
+}
+
+/**
+ * @subsection  Header
+ */
+
+#Header {
+    height: 72px;
+    padding: 10px 0 12px;
+    background: url(../img/top_01.png) repeat-y;
+    color: #FFF;
+    position: relative;
+    z-index: 10;
+    border-top: 4px solid #6f7072;
+}
+
+#Header a {
+    color: white;
+    outline: none;
+}
+
+#Header #Logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 310px;
+    height: 94px;
+    background: transparent url(../img/top_graphic.gif) no-repeat;
+}
+
+/* RTL Button placement - development purpose only */
+#Header button {
+    position: absolute;
+    width: 100px;
+    margin: 0;
+    top: 17px;
+    right: 21px;
+} .RTL #Header button { display: none; }
+
+/**
+ * @subsection  Content
+ */
+
+.Content {
+    padding: 13px 21px;
+    border-top: 1px solid #EEE;
+}
+
+/**
+ * @subsection  Footer
+ */
+#Footer {
+    width: 100%;
+    margin-top: 3px;
+    overflow: hidden;
+    background: #CEDC32;
+    padding: 15px;
+    color: #999;
+}
+
+#Footer a {
+    margin: 8px 8px 7px;
+    color: #999;
+    font-weight: bold;
+    float: left;
+}
+
+#Footer a:hover {
+    color: #999;
+}
+
+} /* end @media */
