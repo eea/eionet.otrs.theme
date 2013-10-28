@@ -15,7 +15,7 @@
  * @subsection  Navigation
  */
 #Navigation {
-    height: 23px;
+    height: 24px;
     clear: both;
     font: 80% Helvetica, Verdana, Geneva, Arial, sans-serif;
     width: 100%;
@@ -35,7 +35,7 @@
 
 #Navigation > ul > li > ul {
     position: absolute;
-    top: 23px;
+    top: 24px;
     left: 1px;
     min-width: 140px;
     display: none;
@@ -71,6 +71,7 @@
     margin-left: 0;
     float: left;
     position: relative;
+    height: 24px;
 }
 
 .RTL #Navigation > ul > li {
@@ -147,6 +148,7 @@
 
 #Navigation .Selected > a {
     padding: 6px 10px 4px 11px;
+    margin-top: 0;
     color: #FFF;
     background: none;
     text-shadow: none;
