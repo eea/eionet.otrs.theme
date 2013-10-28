@@ -85,6 +85,7 @@
     color: #fff;
     padding: 5px 11px;
     text-shadow: none;
+    background: none;
 }
 
 #Navigation > ul > li > ul a, #Navigation > ul > li > ul .Footer {
@@ -134,7 +135,6 @@
     padding-top: 6px;
     padding-bottom: 4px;
     color: white;
-    background: url(../img/tabs_isolator.png) no-repeat bottom right;
     background: none;
     text-shadow: none;
 }
