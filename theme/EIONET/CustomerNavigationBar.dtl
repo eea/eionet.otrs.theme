@@ -1,0 +1,40 @@
+# --
+# CustomerNavigationBar.dtl - provides global HTML NavigationBar
+# Copyright (C) 2001-2013 OTRS AG, http://otrs.com/
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+
+<!-- start Notifications -->
+$Data{"Notification"}
+<!-- end Notifications -->
+<!-- start NavigationBar -->
+<div id="Navigation">
+    <ul>
+<!-- dtl:block:Item -->
+        <li class="$QData{"Class"}" title="$Text{"$Data{"Description"}"}">
+            <a href="$Env{"Baselink"}$Data{"Link"}" accesskey="$QData{"AccessKey"}" title="$Text{"$Data{"Name"}"} ($QData{"AccessKey"})">$Text{"$Data{"Name"}"}</a>
+<!-- dtl:block:ItemAreaSub -->
+            <ul>
+<!-- dtl:block:ItemAreaSubItem -->
+                <li><a class="$QData{"Class"}" href="$Env{"Baselink"}$Data{"Link"}" accesskey="$QData{"AccessKey"}" title="$Text{"$Data{"Name"}"} ($QData{"AccessKey"})">$Text{"$Data{"Name"}"}</a></li>
+<!-- dtl:block:ItemAreaSubItem -->
+                <li class="Footer"></li>
+            </ul>
+<!-- dtl:block:ItemAreaSub -->
+        </li>
+<!-- dtl:block:Item -->
+    </ul>
+    <div id="UserInfo">
+    <!-- dtl:block:Preferences -->
+                $Text{"You are logged in as"}
+                <a class="personalprefs" href="$Env{"Baselink"}Action=CustomerPreferences" title="$Text{"Edit personal preferences"}">$QEnv{"UserFirstname"} $QEnv{"UserLastname"}</a>
+    <!-- dtl:block:Preferences -->
+    <!-- dtl:block:Logout -->
+                <a class="LogoutButton" id="LogoutButton" href="$Env{"Baselink"}Action=Logout" title="$Text{"Logout"}"></a>
+    <!-- dtl:block:Logout -->
+    </div>
+</div>
+<!-- end NavigationBar -->

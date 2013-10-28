@@ -16,15 +16,9 @@
  */
 #Navigation {
     height: 23px;
-/*    background: #A7AAAA url("../img/GradientSmall.png") repeat-x 0 -50px;
-    width: 100%;
-    position: relative;
-    border-top: 1px solid #EEE;
-    border-bottom: 1px solid #979999;*/
     clear: both;
     font: 80% Helvetica, Verdana, Geneva, Arial, sans-serif;
     width: 100%;
-    /*height: 1.3em;*/
     padding: 0;
     background: #00446a;
     border-top: 1px solid black;
@@ -41,7 +35,7 @@
 
 #Navigation > ul > li > ul {
     position: absolute;
-    top: 24px;
+    top: 23px;
     left: 1px;
     min-width: 140px;
     display: none;
@@ -87,26 +81,17 @@
 #Navigation > ul > li > a {
     display: block;
     text-decoration: none;
-    /*padding: 0.1em 0.5em;*/
     color: #fff;
     padding: 5px 11px;
     text-shadow: none;
-/*    color: #111;
-    font-size: 11px;
-    background: url(../img/controlrow_isolator.png) no-repeat right 2px;
-    display: block;
-    outline: none;
-    text-shadow: 0 1px 0 #EAEEEE;*/
 }
 
 #Navigation > ul > li > ul a, #Navigation > ul > li > ul .Footer {
     color: #222;
     font-size: 11px;
-    padding: 4px 6px;
+    padding: 6px 11px 4px 10px;
     display: block;
     background-color: #eee;
-    /*background-color: #C4C6C6;*/
-    /*text-shadow: 0 1px 0 #EAEEEE;*/
     text-shadow: none;
     border-top: 1px dotted #000;
 }
@@ -133,7 +118,6 @@
 
 #Navigation li:active {
     margin-top: -1px;
-    /*background: url(../img/tabs_active_bg.png) no-repeat top left;*/
     background: none;
 }
 
@@ -146,28 +130,25 @@
 }
 
 #Navigation li:active > a {
-    padding-top: 7px;
-    padding-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 4px;
     color: white;
     background: url(../img/tabs_isolator.png) no-repeat bottom right;
-    /*text-shadow: 0 1px 0 #DADDDD;*/
+    background: none;
     text-shadow: none;
 }
 
 #Navigation .Selected,
 #Navigation .Selected:active {
-    margin-top: -1px;
-    /*background: url(../img/tabs_active_bg.png) no-repeat bottom left;*/
+    margin-top: 0;
     background: #759FCF;
-    border-bottom: 1px solid #666;
+    border-bottom: none;
 }
 
 #Navigation .Selected > a {
-    margin-right: -1px;
     padding: 6px 10px 4px 11px;
     color: #FFF;
     background: none;
-    /*text-shadow: 0 -1px 0 #000;*/
     text-shadow: none;
 }
 
@@ -179,7 +160,7 @@
 #Navigation .Selected a:active {
     padding: 6px 10px 4px 11px;
     color: #222;
-    /*text-shadow: 0 1px 0 #000;*/
+    background: none;
     text-shadow: none;
 }
 
