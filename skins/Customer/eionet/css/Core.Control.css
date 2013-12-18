@@ -91,11 +91,20 @@
 #Navigation > ul > li > ul a, #Navigation > ul > li > ul .Footer {
     color: #222;
     font-size: 11px;
-    padding: 6px 11px 4px 10px;
+    padding: 6px 11px 6px 10px;
     display: block;
     background-color: #eee;
     text-shadow: none;
-    border-top: 1px dotted #000;
+}
+
+#Navigation li:active {
+    margin: 0;
+    border: none;
+}
+
+#Navigation .Selected,
+#Navigation .Selected:active {
+    margin: 0;
 }
 
 #Navigation > ul > li > ul .Footer {
@@ -119,7 +128,7 @@
 }
 
 #Navigation li:active {
-    margin-top: -1px;
+    margin-top: 0;
     background: none;
 }
 
@@ -152,17 +161,18 @@
     color: #FFF;
     background: none;
     text-shadow: none;
+    /*margin-right: 0;*/
 }
 
 .RTL #Navigation .Selected a,
 .RTL #Navigation .Selected a:active {
-    padding: 6px 11px 4px 10px;
+    padding: 6px 11px 6px 10px;
 }
 
 #Navigation .Selected a:active {
-    padding: 6px 10px 4px 11px;
+    padding: 6px 10px 6px 11px;
     color: #222;
-    background: none;
+    background: #EAEEEE;
     text-shadow: none;
 }
 

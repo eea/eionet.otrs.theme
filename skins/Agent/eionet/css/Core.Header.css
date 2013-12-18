@@ -139,7 +139,12 @@ a#eealink {
     background: #759FCF;
 }
 
+#Navigation > li:hover > span {
+    display: none;
+}
+
 #Navigation > .Selected {
+    border: 1px solid #030303;
     background-position: left -76px;
     background: #759FCF;
     z-index: 90;
@@ -162,6 +167,10 @@ a#eealink {
     margin-left: 5px;
     margin-top: -10px;
     background-color: #eee;
+}
+
+#Navigation > .Active > ul {
+    top: 24px;
 }
 
 #Navigation > .Active .Shadow > ul > li > a {
