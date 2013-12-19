@@ -5,7 +5,7 @@ set -e
 #The following variables are user configurable
 SKIN_PATH=`/bin/pwd`
 OTRS_USER="otrs"
-OTRS_GROUP="www-data"
+OTRS_GROUP="apache"
 OTRS_ROOT="/opt/otrs"
 
 #make theme directory
