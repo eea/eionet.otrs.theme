@@ -107,7 +107,7 @@ a#eealink {
 }
 
 #Navigation > li > a {
-    height: 15px;
+    height: 13px;
     padding: 4px 10px 4px 10px;
     font-size: 12px;
     font-weight: normal;
@@ -128,6 +128,8 @@ a#eealink {
     display: block;
     position: absolute;
 }
+
+#Navigation .Search{width:12px;}
 
 #Navigation > li:hover {
     background: #759FCF;
@@ -170,7 +172,7 @@ a#eealink {
 }
 
 #Navigation > .Active > ul {
-    top: 24px;
+    top: 23px;
 }
 
 #Navigation > .Active .Shadow > ul > li > a {
