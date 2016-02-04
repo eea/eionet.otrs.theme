@@ -8,217 +8,181 @@
  */
 
 /**
- * @package     Skin "Default"
+ * @package     Skin "Eionet"
  * @section     Header
  */
 
 @media screen,projection,tv,handheld {
 
-/**
- * @subsection  Header
- */
-#toolribbon {
-    height: 30px;
-    width: 100%;
-    font-size: 80%;
-    color: #315076;
-    background-color: #ffffff;
-    border-bottom: 4px solid #6f7072;
-}
+	/**
+	 * @subsection  Header
+	 */
+	#toolribbon {
+		font-size: 10px;
+		font-weight: bold;
+		height: 30px;
+		border-bottom: 4px solid #6f7072;
+	}
 
-#toolribbon a {
-    /*display: inline-block;*/
-    height: 16px;
-    color: #315076;
-    background-color: #ffffff;
-    text-decoration: none;
-    /*vertical-align: middle;*/
-    padding: 3px 0.5em 1px 0.5em;
-    border-right: 1px dotted #6f7072;
-    line-height: 20px;
-}
+	#toolribbon a {
+		padding: 3px 0.5em 1px 0.5em;
+		line-height: 20px;
+	}
 
-#lefttools {
-    float: left;
-    height: 20px;
-    padding: 4px 0.5em;
-    text-align: left;
-    vertical-align: middle;
-}
+	#lefttools {
+		font-weight: normal;
+		font-size: 12px;
+		float: left;
+		padding: 4px 0.5em;
+	}
 
-#righttools {
-    float: right;
-    width: 60%;
-    height: 20px;
-    padding: 4px 0.5em;
-    text-align: right;
-}
+	#righttools {
+		float: right;
+		width: 60%;
+		padding: 4px 0.5em;
+		text-align: right;
+	}
 
-a#eealink {
-    padding-left: 18px;
-    background: url(../img/eeaicon.gif) center left no-repeat;
-}
+	#righttools .fa{ 
+		font-size: 14px;
+	}
+
+	a#eealink {
+		padding-left: 20px;
+		background: url(../img/eeaicon.gif) center left no-repeat;
+	}
+
+	#Header {
+		height: 99px;
+		padding: 10px 0 12px;
+		background: #a5ced1 url(../img/top_01.png) repeat-y;
+		position: relative;
+		z-index: 10;
+	}
+
+	#Header > h1  {
+		padding-left: 25px;
+		padding-top: 15px;
+		font-size: 29px;
+		font-weight: bold;
+		font-variant: small-caps;
+		margin-bottom:5px;
+		font-family: 'Nimbus sans L', Helvetica, Arial, Verdana, sans-serif;
+	}
+
+	#subheader {
+		padding-left: 25px;
+		font-weight: bold;
+		font-size: 17px;
+		font-family: 'Nimbus sans L', Helvetica, Arial, Verdana, sans-serif;
+	}
+
+	#ToolBar {
+		left:auto;
+		right: 10px;
+		top: 10px;
+	}
+
+	/**
+	 * @subsection  Logo
+	 */
+	#Logo {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 310px;
+		height: 94px;
+		background: transparent url(../img/empty.png) no-repeat;
+	}
+
+	/**
+	 * @subsection      Navigation Level-0
+	 */
+	 
+	#NavigationContainer {
+		top: 128px;
+		left:0;
+		width:100%;
+		height:35px;
+	}
+
+	#InnnerNavigationContainer {
+		background-color: #00446A;
+		height: 29px;
+		width: 100%;
+	}
+	 
+	/**
+	 * @subsection      Main hover effect
+	 */
+	#Navigation > li,
+	#Navigation > li > a {
+		background: #00446A;
+	}
+	
+	#Navigation > li > a {
+		padding: 8px 10px 0px 10px;
+	}
+
+	#Navigation > li {
+		border-bottom: 0px solid #000;
+	}
+
+	#Navigation > li:hover {
+		background: #fff;
+	}
+
+	#Navigation > li:hover > a {
+		color: #000;
+		background: #fff;
+	}
+
+	#Navigation > .Selected {
+		background: #fff;
+	}
+
+	#Navigation > .Selected > a {
+		color: #000;
+		background: #fff;
+	}
+
+	/**
+	 * @subsection      Navigation Second level
+	 */
+
+	#Navigation > .Active  > ul {
+		background-color: #eee;
+	}
+
+	#Navigation > .Active  > ul > li > a {
+		color: #000;
+		border-bottom: 1px dotted #000;
+	}
+
+	#Navigation > .Active  > ul > li {
+		color: #000;
+	}
+
+	#Navigation > .Active  > ul > li:hover {
+		background: white;
+	}
+
+	#Navigation > li > ul {
+		margin-top: -5px;
+	}
+
+	#Navigation > li > a#GlobalSearchNav i {
+		margin-top: 4px;
+	}
 
 
-#Header {
-    height: 72px;
-    padding: 10px 0 12px;
-    background: url(../img/header.png) no-repeat;
-    color: #FFF;
-    position: relative;
-    z-index: 10;
-    border-top: 4px solid #6f7072;
-    background-color: #A5CED1;
-}
+	/**
+	 * @subsection  UserInfo
+	 */
 
-/**
- * @subsection  Logo
- */
-#Logo {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 310px;
-    height: 94px;
-    background: transparent url(../img/top_graphic.gif) no-repeat;
-}
+	#UserInfo a.LogoutButton {
+		margin: 0 1px 0 0px;
+		border-left: 1px dotted #333;
+	}
 
-/**
- * @subsection      Navigation Level-0
- */
-#Navigation {
-    top: 130px;
-    left: 10px;
-    position: absolute;
-    z-index: 20;
-    background: #00446A;
-    right: 10px;
-    height: 23px;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-/**
- * @subsection      Main hover effect
- */
-#Navigation > li,
-#Navigation > li > a {
-    background: #00446A;
-}
-
-#Navigation > li > a {
-    height: 13px;
-    padding: 4px 10px 4px 10px;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 15px;
-    color: #DDD;
-    background-position: top right;
-    text-transform: none;
-    display: block;
-}
-
-#Navigation a span.SearchIcon {
-    top: 3px;
-    left: 11px;
-    width: 17px;
-    height: 16px;
-    text-indent: -9999px;
-    background: url(../img/search_bg.png) no-repeat left top;
-    display: block;
-    position: absolute;
-}
-
-#Navigation .Search{width:12px;}
-
-#Navigation > li:hover {
-    background: #759FCF;
-    cursor: pointer;
-}
-
-#Navigation > li:hover > a {
-    color: #FFF;
-    background: #759FCF;
-}
-
-#Navigation > li:hover > span {
-    display: none;
-}
-
-#Navigation > .Selected {
-    border: 1px solid #030303;
-    background-position: left -76px;
-    background: #759FCF;
-    z-index: 90;
-}
-
-#Navigation > .Selected > a {
-    color: #FFF;
-    background-position: right -76px;
-    background: #759FCF;
-}
-
-/**
- * @subsection      Navigation Second level
- */
-
-#Navigation > .Active .Shadow > ul {
-    position: relative;
-    top: -8px;
-    width: 240px;
-    margin-left: 5px;
-    margin-top: -10px;
-    background-color: #eee;
-}
-
-#Navigation > .Active > ul {
-    top: 23px;
-}
-
-#Navigation > .Active .Shadow > ul > li > a {
-    color: #000;
-}
-
-#Navigation > .Active .Shadow > ul > li {
-    color: #000;
-    border-bottom: 1px dotted #000;
-}
-
-#Navigation > .Active .Shadow > ul > li:hover {
-    background: white;
-}
-
-/**
- * @subsection  UserInfo
- */
-#UserInfo {
-    top: 0;
-    right: 10px;
-    padding: 0;
-    font-size: 11px;
-    position: absolute;
-    cursor: default;
-}
-
-#UserInfo a.LogoutButton {
-    top: 4px;
-    right: 0;
-    width: 20px;
-    height: 18px;
-    text-indent: -9999px;
-    background: url(../img/logout_sprite.png) no-repeat left top;
-    position: absolute;
-    margin: 0 1px 0 10px;
-    padding: 0;
-}
-
-#UserInfo a.personalprefs {
-    height: 16px;
-    color: #315076;
-    background-color: #ffffff;
-    text-decoration: none;
-    padding: 3px 50px 1px 5px;
-    border-right: none;
-    line-height: 27px;
-}
 } /* end @media */

@@ -7,16 +7,19 @@
  */
 
 /**
- * @package     Skin "Default"
+ * @package     Skin "Eionet"
  * @section     Footer
  */
 
 @media screen,projection,tv,handheld {
 
-#Footer {
-    background: #CEDC32;
-    padding: 15px;
-    color: #999;
-}
+	#Footer {
+		padding-top: 35px;
+		color: #999;
+		border-top: 0px solid #ccc;
+	}
+	#Footer a{
+		color: #999;
+	}
 
 } /* end @media */

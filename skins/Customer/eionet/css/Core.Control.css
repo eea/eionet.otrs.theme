@@ -11,349 +11,38 @@
 
 @media screen,projection,tv,handheld {
 
-/**
- * @subsection  Navigation
- */
-#Navigation {
-    height: 24px;
-    clear: both;
-    font: 80% Helvetica, Verdana, Geneva, Arial, sans-serif;
-    width: 100%;
-    padding: 0;
-    background: #00446a;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
+	/**
+	 * @subsection  Navigation
+	 */
+	#Navigation {
+		background: #00446a;
+		padding-left: 15px;
+	}
+	
+	#Navigation > ul.Individual {
+		padding-right: 15px;
+	}
+	
+	#Navigation > ul > li > a {
+		color: white;
+		font-size: 12px;
+	}
 
-#Navigation > ul {
-    float: left;
-}
-
-.RTL #Navigation > ul {
-    float: right;
-}
-
-#Navigation > ul > li > ul {
-    position: absolute;
-    top: 24px;
-    left: 1px;
-    min-width: 140px;
-    display: none;
-    -moz-box-shadow: 0 1px 2px #DDD inset, 0 1px 0 #E8E8E8;
-    -webkit-box-shadow: 0 1px 2px #DDD inset, 0 1px 0 #E8E8E8;
-    box-shadow: 0 1px 2px #DDD inset, 0 1px 0 #E8E8E8;
-    border: 1px solid #bbb;
-    border-top: 1px solid #999;
-    -moz-border-radius: 0px 0px 5px 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    border-radius: 0px 0px 5px 5px;
-}
-
-.RTL #Navigation > ul > li > ul {
-    right: 1px;
-}
-
-#Navigation > ul > li:hover ul {
-    display: block;
-    z-index: 1000;
-}
-
-#Navigation .Individual {
-    float: right;
-}
-
-.RTL #Navigation .Individual {
-    float: left;
-}
-
-#Navigation > ul > li {
-    margin-left: 0;
-    float: left;
-    position: relative;
-    height: 24px;
-}
-
-.RTL #Navigation > ul > li {
-    float: right;
-    margin: -1px -2px 0 0;
-}
-
-#Navigation > ul > li > a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 11px;
-    text-shadow: none;
-    background: none;
-}
-
-#Navigation > ul > li > ul a, #Navigation > ul > li > ul .Footer {
-    color: #222;
-    font-size: 11px;
-    padding: 6px 11px 6px 10px;
-    display: block;
-    background-color: #eee;
-    text-shadow: none;
-}
-
-#Navigation li:active {
-    margin: 0;
-    border: none;
-}
-
-#Navigation .Selected,
-#Navigation .Selected:active {
-    margin: 0;
-}
-
-#Navigation > ul > li > ul .Footer {
-    border-top: 0px;
-    -moz-border-radius: 0px 0px 5px 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    border-radius: 0px 0px 5px 5px;
-    padding-bottom: 0px;
-    padding-top: 2px;
-    background-color: #aaa;
-}
-
-#Navigation > ul > li > ul a:hover, #Navigation > ul > li > ul a.SubSelected {
-    background-color: white;
-}
-
-.RTL #Navigation li:first-child a,
-#Navigation .Last a {
-    background-image: none;
-}
-
-#Navigation li:active {
-    margin-top: 0;
-    background: none;
-}
-
-#Navigation .Selected + li {
-    margin-left: -1px;
-}
-
-#Navigation .Selected + li a {
-    padding-left: 10px;
-}
-
-#Navigation li:active > a {
-    padding-top: 6px;
-    padding-bottom: 4px;
-    color: white;
-    background: none;
-    text-shadow: none;
-}
-
-#Navigation .Selected,
-#Navigation .Selected:active {
-    margin-top: 0;
-    background: #759FCF;
-    border-bottom: none;
-}
-
-#Navigation .Selected > a {
-    padding: 6px 10px 4px 11px;
-    margin-top: 0;
-    color: #FFF;
-    background: none;
-    text-shadow: none;
-    /*margin-right: 0;*/
-}
-
-.RTL #Navigation .Selected a,
-.RTL #Navigation .Selected a:active {
-    padding: 6px 11px 6px 10px;
-}
-
-#Navigation .Selected a:active {
-    padding: 6px 10px 6px 11px;
-    color: #222;
-    background: #EAEEEE;
-    text-shadow: none;
-}
-
-/**
- * @subsection  Action Row / MessageBox (Notification)
- */
-
-.MessageBox,
-.ActionRow {
-    font-size: 11px;
-    background: #A7AAAA url("../img/GradientSmall.png") repeat-x 0 0;
-    border-top: 1px solid #F0F2F2;
-    border-bottom: 1px solid #B8BBBB;
-    overflow: hidden;
-    text-shadow: 0 1px 0 #F6F9F9;
-    clear: both;
-}
-
-.MessageBox p {
-    margin: 5px 7px;
-    padding: 1px 0 1px 20px;
-    background-position: left;
-}
-
-.RTL .MessageBox p {
-    padding: 1px 20px 1px 0;
-    background-position: right;
-}
-
-.MessageBox a {
-    display: none;
-}
-
-.MessageBox.Notice p {
-    background: url(../img/accept.png) no-repeat;
-}
-
-.MessageBox.Error p {
-    background: url(../img/decline.png) no-repeat;
-}
-
-#BottomActionRow {
-    padding: 5px 9px;
-    background: #A7AAAA url("../img/GradientSmall.png") repeat-x 0 0;
-    border: 1px solid #B8BBBB;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-}
-
-.TicketView #BottomActionRow,
-.RTL .TicketView #BottomActionRow {
-    padding: 0;
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-left: none;
-    border-right: none;
-}
-
-#BottomActionRow span {
-    padding: 0 5px;
-}
-
-.RTL #BottomActionRow span {
-    padding-left: 0;
-    padding-right: 5px;
-}
-
-.Filter {
-    padding: 0 !important;
-}
-
-.Filter a {
-    padding: 5px 9px;
-    background: url(../img/actionrow_divider.png) no-repeat right 7px;
-    text-shadow: 0 1px 0 #ECF0F0;
-    display: block;
-}
-
-.RTL .Filter a {
-    background-position: left;
-}
-
-.Tabs {
-    padding: 5px 9px;
-    float: left;
-}
-
-.RTL .Tabs {
-    float: right;
-}
-
-.Tabs li {
-    float: left;
-}
-
-.RTL .Tabs li {
-    float: right;
-}
-
-.Tabs a {
-    color: #777;
-}
-
-.Tabs a:hover {
-    color: #444;
-}
-
-.Tabs .Selected {
-    font-weight: bold;
-    color: #444;
-}
-
-.Pagination {
-    float: right;
-}
-
-.RTL .Pagination {
-    float: left;
-}
-
-.Pagination a {
-    padding-left: 3px;
-    background: none;
-    text-shadow: none;
-}
-
-.ActionRow .Last a,
-.Filter .Last a {
-    background: none;
-}
-
-.RTL .ActionRow .Last a {
-    padding-right: 3px;
-    padding-left: 0;
-}
-
-.Sortable .ActionRow {
-    padding-bottom: 8px;
-    border-bottom: none;
-}
-
-.Sortable #BottomActionRow {
-    padding-bottom: 0;
-    border-bottom: 1px solid #B8BBBB;
-}
-
-/**
- * @subsection  SerachTerms
- */
-
-.SearchTerms {
-    padding: 4px 7px;
-}
-
-.SearchTerms h2 {
-    margin: 0;
-    color: #222;
-    font-size: 15px;
-    display: inline;
-    text-shadow: 0 1px 0 #EEE;
-}
-
-.SearchTerms span {
-    padding: 1px 8px 0;
-    margin: 0 3px;
-    color: #666;
-    background: #FFF;
-    border: 1px solid #BBB;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    -moz-box-shadow: 0 1px 2px #DDD inset, 0 1px 0 #E8E8E8;
-    -webkit-box-shadow: 0 1px 2px #DDD inset, 0 1px 0 #E8E8E8;
-    box-shadow: 0 1px 2px #DDD inset, 0 1px 0 #E8E8E8;
-}
-
-.SearchTerms span a {
-    font-size: 13px;
-    vertical-align: bottom;
-}
-
+	#Navigation > ul > li:hover > a, #Navigation .Selected > a {
+		color: black;
+		background-color: white;
+	}
+	
+	#Navigation > ul > li > ul a {
+		color: black;
+		background-color: #eee;
+		border-top: 1px dotted #999;	
+	}
+	
+	#Navigation > ul > li > ul a:hover, #Navigation > ul > li > ul a:focus, #Navigation > ul > li > ul a.SubSelected {
+		color: black;
+		background-color: white;	
+	}
+	
+	
 } /* end @media */

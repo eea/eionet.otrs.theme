@@ -5,53 +5,47 @@
  */
 
 /**
- * @package     Skin "Default"
+ * @package     Skin "Eionet"
  * @section     Default Settings
  */
 
 @media screen,projection,tv,handheld {
 
-/**
- * @subsection  Fonts
- */
-body {
-    font-family: Verdana, sans-serif;
-    font-size: 12px;
-    color: #484848;
-    margin: 0;
-    padding: 0 10px;
-    min-width: 900px;
-}
+	/**
+	 * @subsection  Fonts
+	 */
+	body {
+		font-family: Verdana, sans-serif;
+		font-size: 12px;
+		color: #484848;
+		margin: 0;
+		padding: 0;
+	}
 
-.clearfix {
-    clear: both;
-}
+	.clearfix {
+		clear: both;
+	}
 
-/**
- * @subsection  Links
- */
+	/**
+	 * @subsection  Links
+	 */
 
-a {
-    color: #169;
-    text-decoration: none;
-}
+	a {
+		color: #169;
+	}
 
-a:hover,
-a:focus {
-    color: #759FCF;
-}
-
-/**
- * @subsection  MainBox
- */
-.MainBox {
-    position: relative;
-    padding: 30px 16px 8px 8px;
-}
-
-.MessageBox {
-    margin: 20px 18px 0 10px;
-}
+	a:hover,
+	a:focus {
+		color: #759FCF;
+	}
+	
+	.MessageBox  {
+		background: #759FCF;
+	}
+	
+	.MessageBox p, .MessageBox a {
+		color: black;	
+	}
 
 } /* end @media */
 

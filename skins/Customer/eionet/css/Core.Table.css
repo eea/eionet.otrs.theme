@@ -7,199 +7,27 @@
 @media screen,projection,tv,handheld {
 
 /**
- * @package     OTRS Framework - Skin "Default"
+ * @package     OTRS Framework - Skin "Eionet"
  * @section     Customer
  */
 
-.TicketView .Content {
-    padding: 0;
-}
+	/**
+	 * @subsection  Table Style Hovered
+	 */
+	.Overview tbody tr:hover td {
+		background: #759FCF;
+		color: white;
+	}
 
-table.Overview {
-    top: -1px;
-    width: 100%;
-    color: #444;
-    text-shadow: 0 1px 0 #FFF;
-    zoom: 1;
-    clear: both;
-    position: relative;
-}
-
-.Overview thead {
-    background: #A7AAAA url("../img/GradientSmall.png") repeat-x 0 -31px;
-    display: none;
-}
-
-.Sortable thead {
-    display: table-header-group;
-}
-
-.SearchResults thead {
-    background-position: 0 -54px;
-}
-
-.Overview thead th {
-    padding: 0;
-    vertical-align: bottom;
-    border-right: 1px solid #999;
-    border-bottom: 1px solid #999;
-}
-
-.RTL .Overview thead th {
-    border-right: none;
-    border-left: 1px solid #666;
-}
-
-.Overview thead .Status {
-    padding-left: 0;
-}
-
-.Overview thead a {
-    padding: 1px 13px 4px 8px;
-    height: 10px;
-    color: #444;
-    font-size: 11px;
-    text-transform: uppercase;
-    display: block;
-    text-shadow: 0 1px 0 #EEE;
-}
-
-.Overview thead span {
-    padding: 1px 13px 4px 8px;
-    height: 10px;
-    color: #444;
-    font-size: 11px;
-    text-transform: uppercase;
-    display: block;
-    text-shadow: 0 1px 0 #EEE;
-}
-
-.Overview thead .SortAscending a,
-.Overview thead .SortDescending a {
-    color: #222;
-    font-weight: 600;
-    text-align: left;
-    background: url(../img/sortable_bg.png) no-repeat top right;
-    text-shadow: 0 1px 0 #BBB;
-}
-
-.Overview thead .SortDescending a {
-    background-position: bottom right;
-}
-
-.Overview tbody {
-    background-color: transparent;
-}
-
-.Overview tbody tr {
-    border-bottom: 1px solid #FFF;
-}
-
-.Overview tbody tr:active {
-    background-color: #DDD;
-}
-
-.Overview tbody tr:first-child {
-    border-top: none;
-}
-
-.Overview tbody td {
-    padding: 6px 8px 3px;
-    white-space: nowrap;
-    border: 0px solid;
-}
-
-.Overview tbody a {
-    color: #444;
-    text-decoration: none;
-    outline: none;
-}
-
-.Overview table a:hover {
-    color: #000;
-}
-
-/**
- * @subsection  OverviewTable zebra style
- */
-.Overview tbody tr td {
-    background-color: #FBFBFB;
-}
-
-.Overview tbody tr.Even td {
-    background-color: #F2F2F2;
-}
-
-.Overview tbody tr:nth-child(even) td {
-    background-color: #F2F2F2;
-}
-
-/**
- * @subsection  TableData Styles
- */
-.State {
-    padding-left: 8px;
-}
-
-.Title div {
-    height: 14px;
-    color: #777;
-    overflow: hidden;
-    white-space: normal;
-}
-.Title h2 {
-    margin-bottom: 0;
-    font-size: 12px;
-    font-weight: bold;
-    color: #444;
-    display: inline;
-}
-.Age {
-    padding-right: 8px;
-    text-align: right;
-}
-.Overview thead th.Age {
-    border-right: none;
-    border-left: none;
-    text-align: left;
-}
-.RTL .Overview thead th.Age {
-    text-align: right;
-}
-/**
- * @subsection  Table Style Hovered
- */
-.Overview tbody tr:hover td {
-    background: #759FCF;
-    color: white;
-/*    background: -moz-linear-gradient(top, #FFE7BD 0%, #FBBA49 20%, #F6AD3E 51%, #F3960D 51%, #E98207 95%, #E07006 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FFE7BD), color-stop(20%,#FBBA49), color-stop(51%,#F6AD3E), color-stop(51%,#F3960D), color-stop(95%,#E98207), color-stop(100%,#E07006));
-    background: -webkit-linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
-    background: -o-linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
-    background: -ms-linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);
-    background: linear-gradient(top, #FFE7BD 0%,#FBBA49 20%,#F6AD3E 51%,#F3960D 51%,#E98207 95%,#E07006 100%);*/
-}
-.Overview tbody tr:hover {
-    border-color: #CCC;
-}
-.Overview tbody tr:hover td,
-.Overview tbody tr:hover a {
-    color: white;
-    /*text-shadow: 0 1px 0 #F4B259;*/
-    text-shadow: none;
-}
-.Overview tbody tr:hover .Title div {
-    color: white;
-    /*text-shadow: 0 1px 0 #F4B259;*/
-    text-shadow: none;
-}
-/**
- * @subsection  Table Style Active
- */
-
-.Overview tbody tr:active td {
-    padding: 7px 8px 2px;
-    background-position: bottom;
-}
-
+	.Overview tbody tr:hover td,
+	.Overview tbody tr:hover a {
+		color: white;
+		text-shadow: none;
+	}
+	
+	.Overview tbody tr:hover .Title div {
+		color: white;
+		text-shadow: none;
+	}
+		
 } /* end @media */
