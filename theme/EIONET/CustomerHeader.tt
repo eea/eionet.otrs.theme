@@ -1,0 +1,38 @@
+# --
+# CustomerHeader.tt - provides global HTML header
+# Copyright (C) 2001-2016 OTRS AG, http://otrs.com/
+# --
+# This software comes with ABSOLUTELY NO WARRANTY. For details, see
+# the enclosed file COPYING for license information (AGPL). If you
+# did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
+# --
+[%- INCLUDE "HTTPHeaders.tt" -%]
+
+<!DOCTYPE html>
+<html>
+[% InsertTemplate("Copyright.tt") %]
+[% InsertTemplate("CustomerHTMLHead.tt") %]
+<body class="NoJavaScript [% Data.BodyClass | html %]">
+    <div id="toolribbon">
+		<div id="lefttools">
+			<a href="http://eionet.europa.eu/" id="eealink">Eionet</a>
+		</div>
+		<div id="righttools">
+		</div>
+        <div class="clearfix">
+		</div>
+    </div>
+<!-- start CI layout -->
+    <div id="Header">
+        <!-- <h1 class="CompanyName">[% Config("CustomerHeadline") %]</h1> -->
+		<h1>Eionet</h1>
+		<div id="subheader">OTRS helpdesk system</div>
+<!-- dtl_block:HeaderLogo -->
+        <div id="Logo"></div>
+<!-- dtl_block:HeaderLogo -->
+[% RenderBlockStart("DebugRTLButton") %]
+        <button onclick="Core.Debug.SimulateRTLPage();" type="button">Simulate RTL</button>
+[% RenderBlockEnd("DebugRTLButton") %]
+    </div>
+<!-- end CI layout -->
+<!-- end header -->

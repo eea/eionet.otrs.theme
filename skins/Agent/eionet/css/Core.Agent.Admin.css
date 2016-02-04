@@ -1,0 +1,26 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Eionet"
+ * @section     Application
+ * @subsection  Admin
+ */
+
+@media screen,projection,tv,handheld {
+
+	/**
+	 * @subsubsection     General
+	 */
+	.Admin .Size1of2 h4 {
+		color: #169;
+	}
+
+	.Admin .Size1of2:hover h4 {
+		color: #30a3e8;
+	}
+
+} /* end @media print*/

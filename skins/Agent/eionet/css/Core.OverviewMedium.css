@@ -1,0 +1,22 @@
+/**
+ * @project     OTRS (http://www.otrs.org) - Agent Frontend
+ * @copyright   OTRS AG
+ * @license     AGPL (http://www.gnu.org/licenses/agpl.txt)
+ */
+
+/**
+ * @package     Skin "Eionet"
+ * @section     OverviewMedium
+ */
+
+@media screen,projection,tv,handheld {
+
+	/**
+	 * @subsection  Medium View Overview
+	 */
+	.OverviewMedium li:hover div.Content,
+	.OverviewMedium li:hover {
+		border-left-color: #759FCF !important;
+	}
+
+} /* end @media */
