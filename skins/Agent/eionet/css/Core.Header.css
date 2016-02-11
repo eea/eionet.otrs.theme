@@ -57,7 +57,7 @@
 		padding: 10px 0 12px;
 		background: #a5ced1 url(../img/top_01.png) repeat-y;
 		position: relative;
-		z-index: 10;
+		z-index: auto;
 	}
 
 	#Header > h1  {
@@ -104,6 +104,7 @@
 		left:0;
 		width:100%;
 		height:1000px !important;
+		z-index: auto;
 	}
 
 	#InnnerNavigationContainer {
