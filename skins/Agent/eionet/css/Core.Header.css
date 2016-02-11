@@ -103,7 +103,7 @@
 		top: 128px;
 		left:0;
 		width:100%;
-		height:35px;
+		height:1000px !important;
 	}
 
 	#InnnerNavigationContainer {
