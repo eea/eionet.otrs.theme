@@ -27,5 +27,9 @@
 	.UseArticleColors .customer-phone:hover > td {
 		background: #759FCF !important;
 	}
+	
+	.UseArticleColors #ArticleTable tr:hover a {
+	    color: #fff;
+	}
 
 } /* end @media */
