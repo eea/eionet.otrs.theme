@@ -6,25 +6,24 @@
 
 /**
  * @package     Skin "Eionet"
- * @section     Application
- * @subsection  Admin
+ * @section     Widgets
  */
 
 @media screen,projection,tv,handheld {
 
 	/**
-	 * @subsubsection     General
+	 * @subsection  Widget Tablelike list
 	 */
-	.Admin .Size1of2 h4 {
-		color: #169;
+	ul.Tablelike li:hover {
+		background: #759FCF;
 	}
-
-	.Admin .Size1of2:hover h4 {
-		color: #30a3e8;
+	
+	ul.Tablelike li.Header {
+		background: #eeeeee;
 	}
-
-	.Admin .Size1of2 .AsBlock {
-		z-index: 19;
 	
+	ul.Tablelike li:hover a {
+		color: #fff;
+	}
 	
-} /* end @media print*/
+} /* end @media */

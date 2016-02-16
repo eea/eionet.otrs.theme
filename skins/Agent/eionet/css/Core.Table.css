@@ -16,11 +16,16 @@
 	 */
 
 	.DataTable tbody tr:hover td,
+	.DataTable tbody tr:hover td a,
 	.TableSmall tbody tr:hover td {
 		background: #759FCF;
 		color: white;
 	}
 
+	.TableSmall tr:hover td a {
+		color: white;
+	}
+	
 	.DataTable tbody tr:active td.Clickable,
 	.TableSmall tbody tr:active td.Clickable {
 		background: #759FCF;
